@@ -65,8 +65,11 @@ class PostController extends Controller
 
         $data = Post::create([
             'titre' => $request->input('titre'),
+            'titre_en' => $request->input('titre_en'),
             'contenu' => $request->input('contenu'),
+            'contenu_en' => $request->input('contenu_en'),
             'htmlOne' => $request->input('htmlOne'),
+            'htmlOne_en' => $request->input('htmlOne_en'),
             'email' => $request->input('email'),
             'date' => $request->input('date'),
             'date_debut' => $request->input('date_debut'),
@@ -195,8 +198,11 @@ class PostController extends Controller
 
         $data->update([
             'titre' => $request->input('titre'),
+            'titre_en' => $request->input('titre_en'),
             'contenu' => $request->input('contenu'),
+            'contenu_en' => $request->input('contenu_en'),
             'htmlOne' => $request->input('htmlOne'),
+            'htmlOne_en' => $request->input('htmlOne_en'),
             'email' => $request->input('email'),
             'date' => $request->input('date'),
             'date_debut' => $request->input('date_debut'),
